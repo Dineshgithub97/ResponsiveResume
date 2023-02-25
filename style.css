@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #a6abad;
+    display: block;
+}
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 300px 700px;
+    margin: 20px auto;
+}
+.left-section{
+    grid-column: span 1;
+    background-color: #4D455D
+}
+.right-section{
+   
+   background-color:#E1EEDD;
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+  display: block;
+  align-items: center;
+  object-fit: cover;
+  margin: auto;
+  border: 5px solid white;
+  border-radius: 30%;
+  width: 60%;
+  object-fit: cover;
+}
+.profile-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+    color: whitesmoke;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    color: whitesmoke;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    color: whitesmoke;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    line-height: 3rem;
+}
+.social-media li a{
+  font-size: 30px;  
+}
+.personal-details{
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+.fa-solid{
+    padding-right: 10px;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+    color: whitesmoke;
+}
+.skill-item{
+    padding-bottom: 30px;
+}
+.skill-name{
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    color: white;
+}
+.progress-bar{
+    border: 1px solid white;
+    border-radius: 20%;
+    height: 4px;
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+@media only screen and (max-width: 673px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 630px){
+.main-content{
+    grid-template-columns: repeat(1, 1fr);
+}
+}
