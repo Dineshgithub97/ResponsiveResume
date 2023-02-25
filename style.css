@@ -17,11 +17,11 @@ body{
     margin: 20px auto;
 }
 .left-section{
-    grid-column: span 1;
+    grid-column: span 1/ auto;
     background-color: #4D455D
 }
 .right-section{
-   
+   grid-column: span 1/ span 2;
    background-color:#E1EEDD;
 }
 .left-content{
